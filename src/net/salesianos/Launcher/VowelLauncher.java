@@ -19,7 +19,6 @@ public class VowelLauncher {
       processBuilder.redirectOutput(outputFile);
       javaProcess =  processBuilder.start();
     } catch (IOException e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
     }
 
