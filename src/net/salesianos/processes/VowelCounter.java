@@ -2,17 +2,17 @@ package net.salesianos.processes;
 
 public class VowelCounter {
     public static void main(String[] args) {
-        //String line = args[0];
-        //String[] letters = line.split("");
+        String text = args[0];
+        String vowel = args[1];
         int nCoincidencias = 0;
 
-        String pruebita = "hola buenos dias";
+        //String text = "hola buenos dias";
 
-        for (int i = 0; i < pruebita.length(); i++) {
+        for (int i = 0; i < text.length(); i++) {
 
-            String caracterComparar = String.valueOf(pruebita.charAt(i));
+            String caracterComparar = String.valueOf(text.charAt(i));
 
-            if(caracterComparar.equals("o")){
+            if(caracterComparar.equals(vowel)){
                 nCoincidencias++;
             }
         }
