@@ -65,15 +65,15 @@ public class App {
         Integer totalVowels = 0;
 
         for (int i = 1; i <= lineCounter; i++) {
-        String outputFileName = "outputLine" + i + ".txt";
-        String outputFileRoute = "src/net/salesianos/outputs/" + outputFileName;
-        Integer VowelsFromFile = Utils.getTotalVowelsFrom(outputFileRoute);
-        totalVowels += VowelsFromFile;
+            String outputFileName = "outputLine" + i + ".txt";
+            String outputFileRoute = "src/net/salesianos/outputs/" + outputFileName;
+            Integer VowelsFromFile = Utils.getTotalVowelsFrom(outputFileRoute);
+            totalVowels += VowelsFromFile;
 
-        System.out.println("El fichero " + outputFileName + " tiene " + VowelsFromFile );
-    
-        File outputFile = new File(outputFileRoute);
-        outputFile.delete();
+            System.out.println("El fichero " + outputFileName + " tiene " + VowelsFromFile );
+        
+            File outputFile = new File(outputFileRoute);
+            outputFile.delete();
         }
         
         System.out.println("El fichero tiene " + totalVowels + " vocales en total");
