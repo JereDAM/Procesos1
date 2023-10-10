@@ -28,7 +28,7 @@ public class Utils {
     return TextLineCounter;
   }
 
-  public static Integer getTotalWordsFrom(String fileRoute) {
+  public static Integer getTotalVowelsFrom(String fileRoute) {
     try {
       BufferedReader bufferedReader = new BufferedReader(new FileReader(fileRoute));
       String firsLine = bufferedReader.readLine();
@@ -37,7 +37,6 @@ public class Utils {
     } catch (IOException e) {
       e.printStackTrace();
     }
-
     return 0;
   }
 }
